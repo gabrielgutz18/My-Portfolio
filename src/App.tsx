@@ -7,7 +7,7 @@ function App() {
       <header className ="header-coontainer">
         <div className = "header-logo-section">
           <h1 className = "Header-logo">
-            Gabriel Gutierrez
+            Gabriel
           </h1>
 
 
