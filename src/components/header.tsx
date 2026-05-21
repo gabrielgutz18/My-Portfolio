@@ -1,9 +1,11 @@
 import './header.css'
+import iconHead from '../assets/G.svg'
 
 function Header() {
   return (
     <header className="site-header">
       <a className="site-logo" href="/">
+        <img className="site-logo-icon" src={iconHead} alt="" />
         Gabriel
       </a>
 
