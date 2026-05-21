@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/header'
 import Footer from './components/footer'
 import heroImage from './images/myself.png'
+import Skill from './components/skill' 
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <h2>About Me</h2>
         <p>I'm a passionate developer with experience in web development. I love creating innovative solutions and learning new technologies.</p>
       </section>
+      <Skill/>
+     
       <Footer/>
     </div>
   )
