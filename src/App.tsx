@@ -47,7 +47,7 @@ function App() {
                   words={['Computer Engineer with a growing passion for web development, focused on creating clean and user-friendly web experiences.']}
                   cursor
                   cursorStyle="|"
-                  typeSpeed={50}
+                  typeSpeed={20}
                   deleteSpeed={30}
                   delaySpeed={1000}
                 />

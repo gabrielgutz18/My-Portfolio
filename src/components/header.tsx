@@ -6,7 +6,7 @@ function Header() {
     <header className="site-header">
       <a className="site-logo" href={import.meta.env.BASE_URL}>
         <img className="site-logo-icon" src={iconHead} alt="" />
-        Gabriel
+        <span className="site-logo-text">Gabriel.</span>
       </a>
 
       <nav className="site-nav" aria-label="Main navigation">
