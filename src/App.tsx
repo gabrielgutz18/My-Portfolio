@@ -5,6 +5,9 @@ import heroImage from './images/myself1.png'
 import Skill from './components/skill' 
 import PixelBlast from './components/PixelBlast'
 import Aboutme from './components/aboutme.tsx'
+import gitimg from './assets/github-svgrepo-com.svg'
+import linkedinimg from './assets/linkedin-svgrepo-com.svg'
+import { Typewriter } from 'react-simple-typewriter'
 
 
 function App() {
@@ -39,8 +42,27 @@ function App() {
             <div className="text-content-hero">
               <h1>Welcome to My Portfolio</h1>
               <h2 className="subtitle">I'm Gabriel, a passionate developer.</h2>
-              <p>Computer Engineer with a growing passion for web development, focused on creating clean and user-friendly web experiences.</p>
-              <a className="contact-button" href="#contact">Contact Me</a>
+              <p>
+                <Typewriter
+                  words={['Computer Engineer with a growing passion for web development, focused on creating clean and user-friendly web experiences.']}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={50}
+                  deleteSpeed={30}
+                  delaySpeed={1000}
+                />
+              </p>
+              <div className="hero-actions">
+                <a className="contact-button" href="#contact">Contact Me</a>
+                <a className="gitimg" href="https://github.com/gabrielgutz18" aria-label="GitHub">
+                  <img src={gitimg} alt="" />
+                  <span>Github</span>
+                </a>
+                <a className="linkedinimg" href="https://www.linkedin.com/in/gutierrez-gabriel-luigi-m-84587233b/" aria-label="LinkedIn">
+                  <img src={linkedinimg} alt="" />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
             </div>
           </div>
       </section>
