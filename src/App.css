@@ -106,7 +106,7 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 520px;
-  padding: 64px 8%;
+  padding: 126px 8% 64px;
   display: flex;
   align-items: center;
 }
@@ -142,7 +142,7 @@ body {
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 42px 6%;
+    padding: 118px 6% 42px;
   }
 
   .hero-card {
@@ -168,5 +168,11 @@ body {
 
   .contact-button {
     align-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 176px;
   }
 }
