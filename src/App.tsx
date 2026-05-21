@@ -16,20 +16,20 @@ function App() {
         <section className="hero" id="home">
           <div className="hero-pixel-background" aria-hidden="true">
             <PixelBlast
-              variant="square"
-              className=""
-              style={{}}
-              pixelSize={2}
-              color="#b0b7c0"
-              patternScale={1}
-              patternDensity={1.3}
-              enableRipples
-              rippleSpeed={0.3}
-              rippleThickness={0.07}
-              rippleIntensityScale={0.6}
-              speed={0.2}
-              transparent
-              edgeFade={0.2}
+                className="pixel-blast"
+                style={{}}
+                variant="square"
+                pixelSize={2}
+                color="#2a2a2a"
+                patternScale={4.5}
+                patternDensity={1.2}
+                enableRipples
+                rippleSpeed={0.3}
+                rippleThickness={0.1}
+                rippleIntensityScale={1}
+                speed={1.5}
+                transparent
+                edgeFade={0.15}
             />
           </div> 
       
