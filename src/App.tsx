@@ -1,23 +1,24 @@
 import './App.css'
+import Header from './components/header'
+import Footer from './components/footer'
 
 function App() {
   return (
-    <>
-    <div className ="header-wrapper">
-      <header className ="header-coontainer">
-        <div className = "header-logo-section">
-          <h1 className = "Header-logo">
-            Gabriel
-          </h1>
-
-
+    <div className="app">
+      <Header/>
+      <section className ="hero">
+        <div className = "hero-image">
+          <img src="/images/hero.jpg" alt="Hero Image" />
+          <div className = "text-content-hero">
+          <h1>Welcome to My Portfolio</h1>
+          <h2>I'm Gabriel</h2>
+          <p>This is a showcase of my projects and skills.</p>
+          </div>
         </div>
-      </header>
-
+      </section>
+      <Footer/>
     </div>
-    
-    </>
   )
 }
-export default App
 
+export default App
