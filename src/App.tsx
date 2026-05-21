@@ -4,6 +4,7 @@ import Footer from './components/footer'
 import heroImage from './images/myself1.png'
 import Skill from './components/skill' 
 import PixelBlast from './components/PixelBlast'
+import Aboutme from './components/aboutme.tsx'
 
 
 function App() {
@@ -42,9 +43,9 @@ function App() {
               <a className="contact-button" href="#contact">Contact Me</a>
             </div>
           </div>
-      
       </section>
-      
+
+      <Aboutme/>
       <Skill/>
       <Footer/>
     </div>
