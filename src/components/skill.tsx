@@ -2,7 +2,9 @@ import './skill.css'
 
 function Skill() {
   return (
-    <h1>My skills</h1>
+    <section className="skill" id="skills">
+      <h1 className="skill-title">My skills</h1>
+    </section>
   )
 }
 

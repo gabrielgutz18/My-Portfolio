@@ -11,6 +11,29 @@ export default defineConfig({
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: 'three-vendor',
+              test: /node_modules[\\/]three[\\/]/,
+              maxSize: 250000,
+            },
+            {
+              name: 'effects-vendor',
+              test: /node_modules[\\/]postprocessing[\\/]/,
+            },
+            {
+              name: 'react-vendor',
+              test: /node_modules[\\/](react|react-dom)[\\/]/,
+            },
+          ],
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

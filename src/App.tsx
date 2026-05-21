@@ -12,7 +12,7 @@ function App() {
       
     
       <Header/>
-      <section className="hero" id="home">
+      
         <div className="hero-pixel-background" aria-hidden="true">
           <PixelBlast
             variant="square"
@@ -30,17 +30,21 @@ function App() {
             transparent
             edgeFade={0.2}
           />
-        </div>
-        <div className="hero-card"></div>
-        <div className="hero-image">
-          <img src={heroImage} alt="Gabriel" />
-          <div className="text-content-hero">
-            <h1>Welcome to My Portfolio</h1>
-            <h2>I'm Gabriel</h2>
-            <p>This is a showcase of my projects and skills.</p>
-            <a className="contact-button" href="#contact">Contact Me</a>
+        </div> 
+        
+
+        <section className="hero" id="home">
+      
+          <div className="hero-image">
+            <img src={heroImage} alt="Gabriel" />
+            <div className="text-content-hero">
+              <h1>Welcome to My Portfolio</h1>
+              <h2 className="subtitle">I'm Gabriel, a passionate developer.</h2>
+              <p>This is a showcase of my projects and skills.</p>
+              <a className="contact-button" href="#contact">Contact Me</a>
+            </div>
           </div>
-        </div>
+      
       </section>
       
       <Skill/>
