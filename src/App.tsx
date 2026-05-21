@@ -4,9 +4,11 @@ import Footer from './components/footer'
 import heroImage from './images/myself.png'
 import Skill from './components/skill' 
 
+
 function App() {
   return (
     <div className="app">
+    
       <Header/>
       <section className ="hero" id="home">
         <div className = "hero-image">
@@ -19,10 +21,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section className ="about" id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer with experience in web development. I love creating innovative solutions and learning new technologies.</p>
-      </section>
+      
       <Skill/>
       <Footer/>
     </div>
