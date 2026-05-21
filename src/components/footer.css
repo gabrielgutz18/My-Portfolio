@@ -1,8 +1,15 @@
 .site-footer {
   padding: 48px 8% 32px;
-  background: #ffffff;
-  border-top: 1px solid #e2e8f0;
+  background: #1b1b1b;
   margin-top: auto;
+}
+
+.footer-title {
+  color: white;
+}
+
+.footer-copy {
+  color: #cbd5e1;
 }
 
 .footer-content {
