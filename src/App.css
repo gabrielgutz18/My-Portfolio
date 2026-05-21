@@ -35,6 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex: 1;
+  max-width: 620px;
 }
 
 .text-content-hero h1 {
@@ -45,6 +47,7 @@ body {
 }
 .contact-button{
   display: inline-block;
+  align-self: flex-start;
   background-color: rgb(0, 0, 0);
   color: white;
   padding: 12px 24px;   
@@ -60,35 +63,55 @@ body {
 }
 
 .hero {
-  padding: 64px 8%;
+  position: relative;
+  overflow: hidden;
+  padding: 56px 8%;
+}
+
+.hero-pixel-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-image {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 48px;
+  justify-content: center;
+  gap: clamp(36px, 7vw, 96px);
+  width: min(100%, 1120px);
+  margin: 0 auto;
 }
 
 .hero-image img {
-  width: min(420px, 45%);
-  height: auto;
+  width: clamp(260px, 32vw, 360px);
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center top;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.text-content-hero {
-  flex: 1;
-}
-
 @media (max-width: 768px) {
+  .hero {
+    padding: 40px 6%;
+  }
+
   .hero-image {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
+    gap: 28px;
   }
 
   .hero-image img {
-    width: 100%;
+    width: min(100%, 300px);
+  }
+
+  .text-content-hero {
+    max-width: 100%;
+    align-items: flex-start;
   }
 }
