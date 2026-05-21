@@ -4,7 +4,7 @@ import iconHead from '../assets/G.svg'
 function Header() {
   return (
     <header className="site-header">
-      <a className="site-logo" href="/">
+      <a className="site-logo" href={import.meta.env.BASE_URL}>
         <img className="site-logo-icon" src={iconHead} alt="" />
         Gabriel
       </a>
