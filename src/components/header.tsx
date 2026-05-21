@@ -1,5 +1,5 @@
 import './header.css'
-import iconHead from '../assets/G.svg'
+import iconHead from '../assets/GW.svg'
 
 function Header() {
   return (
