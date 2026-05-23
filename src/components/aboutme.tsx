@@ -89,23 +89,24 @@ const facts = [
 const AboutMe = () => {
   return (
     <section className="aboutme" id="aboutme" aria-labelledby="about-heading">
-      <p className="about-label">About me</p>
+      <p className="about-label">Hello, Welcome!</p>
 
       <div className="about-layout">
         <div className="about-main">
           <h1 className="about-title" id="about-heading">
-            Gabriel<span>.</span>
+            About me<span>.</span>
           </h1>
 
           <blockquote className="about-quote">
-            "I started by untangling cables. Now I build the systems behind
-            them."
+            "Building practical digital systems through web development, IT infrastructure, and embedded engineering projects."
           </blockquote>
 
           <p className="about-intro">
-            Fresh Computer Engineering graduate. I wire networks, build
-            websites, configure servers, and fly drones that help find missing
-            people.
+            "Computer Engineering student specializing in web development, IT support, and systems engineering. Experienced in academic projects, freelance design work, Arduino systems, and internship-based web development and NAS setup."
+          </p>
+
+          <p className="about-intro">
+            <em>"I leverage modern development tools, including AI-assisted workflows, to improve productivity and accelerate problem-solving while maintaining a strong focus on understanding core concepts and implementation."</em>
           </p>
 
           <div className="badge-row" role="list" aria-label="Skills">
@@ -193,19 +194,6 @@ const AboutMe = () => {
                 <p className="fact-text">{fact.text}</p>
               </div>
             ))}
-          </div>
-
-          <hr className="about-divider" />
-
-          <p className="section-title">GitHub activity</p>
-          <div className="github-wrap">
-            <div className="github-cards">
-              <img
-                src="https://github-readme-stats.vercel.app/api?username=gabrielgutz18&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=111111&icon_color=111111&text_color=374151&ring_color=111111"
-                alt="Gabriel's GitHub stats"
-                loading="lazy"
-              />
-            </div>
           </div>
         </aside>
       </div>
