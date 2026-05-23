@@ -19,11 +19,13 @@ const skills = [
   { label: 'Design', Icon: Palette },
   { label: 'Python / JS', Icon: Code2 },
   { label: 'Git / GitHub', Icon: GitBranch },
+  { label: 'IT Support', Icon: Network },
+  { label: 'Graphics designing', Icon: Palette },
 ]
 
 const stats = [
   { value: '99', label: 'Lighthouse performance score' },
-  { value: '4TB', label: 'NAS storage configured' },
+  { value: '4TB + 500GB', label: 'NAS storage configured, TailScale VPN deployed' },
   { value: '1', label: 'Live company website deployed' },
 ]
 
