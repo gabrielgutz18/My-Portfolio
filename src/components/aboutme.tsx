@@ -266,7 +266,7 @@ const AboutMe = () => {
 
           <hr className="about-divider" />
 
-          <p className="section-title">Webinars attended</p>
+          <p className="section-title">Certificates</p>
           <div className="webinar-list" role="list" aria-label="Webinars attended">
             {webinars.map((webinar) => (
               <div className="webinar-card" role="listitem" key={webinar.title}>
