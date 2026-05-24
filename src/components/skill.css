@@ -2,10 +2,31 @@
   padding: 56px 8%;
 }
 
+.skill-logo-loop {
+  position: relative;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 28px;
+  color: #000000;
+}
+
 .skill-title {
   margin: 0;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.1;
   color: #000000;
+}
+
+@media (max-width: 640px) {
+  .skill {
+    padding: 44px 6%;
+  }
+
+  .skill-logo-loop {
+    height: 96px;
+    margin-bottom: 22px;
+  }
 }
