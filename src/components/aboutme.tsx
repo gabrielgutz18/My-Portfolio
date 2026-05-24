@@ -1,15 +1,31 @@
 import {
+  Award,
   Code2,
   Cpu,
   ExternalLink,
   GitBranch,
   Globe2,
+  ImageIcon,
   Mail,
   Network,
   Palette,
   Server,
 } from 'lucide-react'
 import './aboutme.css'
+import cert1 from '../images/Cert/Cisco_cert.jpg'
+import cert2 from '../images/Cert/AIVA.jpg'
+import cert3 from '../images/Cert/cpe.jpg'
+import cert4 from '../images/Cert/Cert_gutierrez_20251217_094037_0000.png'
+import cert5 from '../images/Cert/Customer.jpg'
+import cert6 from '../images/Cert/Gutierrez Cert.jpg'
+import cert7 from '../images/Cert/IOT.jpg'
+import cert8 from '../images/Cert/PLC.jpg'
+import cert9 from '../images/Cert/PCB.png'
+import cert10 from '../images/Cert/ccna.png'
+import cert11 from '../images/Cert/sddt.png'
+import cert12 from '../images/Cert/serverless.png'
+
+
 
 const skills = [
   { label: 'Web dev', Icon: Globe2 },
@@ -74,6 +90,70 @@ const experience = [
     description:
       'Studying CpE with a focus on embedded systems, networking, and software development. Built Arduino projects, and developed hardware-software integrated systems.',
   },
+]
+
+const webinars = [
+  {
+    title: 'Introdction to IoT and Digital Transformation',
+    description: 'offered by DICT-ITU Initiative, Completion: 27 Sept 2025',
+    image: cert1,
+  },
+  {
+    title: 'AI-Powered VA: Future-Proof Your Skills.',
+    description: 'offered by DICT Region V, Given on 18th day of September 2025',
+    image: cert2,
+  },
+  {
+    title: 'Auditing Artificial Intelligenc: Risk, Opportunities, and leading Practices',
+    description: 'Offered by ISACA, Given on 25th day of September 2025',
+    image: cert3,
+  },
+  {
+    title: 'Infosession: Stardust and Stride: Gaining hadns-on experience and insights into building modern, Ai-powered Applications',
+    description: 'Prepared by Google Developer Group on Campus-Cebu Technological University, Given on 20th day of September 2025',
+    image: cert4,
+  },
+  {
+    title: 'Apply Ai: Analyze Customer Reviews',
+    description: 'Offered by Networking Acaddemy, Completion: 27th day of September 2025',
+    image: cert5,
+  },
+  {
+    title: 'Building Web Solutions using Gemini and Firebase Studio',
+    description: 'Prepared by Google Developer Group on Campus-Cebu Technological University, Given on 19th day of September 2025',
+    image: cert6,
+  },
+  {
+    title: 'Internet of Things in Smart Cities',
+    description: 'Prepared by DICT X, Session held on 13th day of September 2025.',
+    image: cert7 ,
+  },
+  {
+    title: 'Fundamentals of Programmable logic Controllers',
+    description: 'Prepared by China-ASEAN Industry-Education Integration Specialized Technical Skills Training Program, Held on 25th day of September 2025',
+    image: cert8,
+  },
+  {
+    title: 'PCB Design Course',
+    description: 'Offered by Simplilearn SkillUP, Completion: 3rd Day of December 2025',
+    image: cert9
+  },
+  {
+    title: 'learn CCNA 200-301 Network Fundamentals Online',
+    description: 'offered by Simplilearn SkillUP, Completion: 16th Day of January 2025',
+    image: cert10
+  },
+  {
+    title: 'Software Development and Design Thinking',
+    description: 'Organized by the ICT literacy and Competency Development Bureau of DICT Region X, Session Held: September 29, 2025',
+    image: cert11,
+  },
+  {
+    title: 'Serverless Architecture for enhance Public Service delivery: Use Cases for Givernment Agency',
+    description: 'Organized by DICT, CamarinesNorte Provincial Office, Region V: Given this of 30th day of September 2025',
+    image: cert12
+  },
+  
 ]
 
 const facts = [
@@ -179,6 +259,30 @@ const AboutMe = () => {
                   <p className="tl-year">{item.year}</p>
                   <p className="tl-title">{item.title}</p>
                   <p className="tl-desc">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <hr className="about-divider" />
+
+          <p className="section-title">Webinars attended</p>
+          <div className="webinar-list" role="list" aria-label="Webinars attended">
+            {webinars.map((webinar) => (
+              <div className="webinar-card" role="listitem" key={webinar.title}>
+                <div className="webinar-media">
+                  {webinar.image ? (
+                    <img src={webinar.image} alt={`${webinar.title} certificate`} />
+                  ) : (
+                    <ImageIcon aria-hidden="true" />
+                  )}
+                </div>
+                <div className="webinar-text">
+                  <Award aria-hidden="true" />
+                  <div>
+                    <p>{webinar.title}</p>
+                    <span>{webinar.description}</span>
+                  </div>
                 </div>
               </div>
             ))}

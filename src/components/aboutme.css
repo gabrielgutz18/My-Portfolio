@@ -470,6 +470,113 @@
   line-height: 1.52;
 }
 
+.webinar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 430px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(17, 17, 17, 0.35) rgba(17, 17, 17, 0.08);
+}
+
+.webinar-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.webinar-list::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.08);
+}
+
+.webinar-list::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.35);
+}
+
+.webinar-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.webinar-card {
+  overflow: hidden;
+  flex: 0 0 auto;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.webinar-card:hover {
+  border-color: rgba(17, 17, 17, 0.3);
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+.webinar-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  background:
+    linear-gradient(135deg, rgba(17, 17, 17, 0.06), rgba(88, 97, 116, 0.08)),
+    #f8fafc;
+  color: #586174;
+}
+
+.webinar-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.webinar-media svg {
+  width: 34px;
+  height: 34px;
+  stroke-width: 1.8;
+}
+
+.webinar-text {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 14px;
+}
+
+.webinar-text svg {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  color: #111111;
+  stroke-width: 2.2;
+}
+
+.webinar-text div {
+  min-width: 0;
+}
+
+.webinar-text p {
+  margin: 0;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.webinar-text span {
+  display: block;
+  margin-top: 4px;
+  color: #586174;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .facts-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
